@@ -10,7 +10,7 @@ var rl = readline.createInterface({
  
 //Load the protobuf
 var proto = grpc.loadPackageDefinition(
-  protoLoader.loadSync("protos/chat.proto", {
+  protoLoader.loadSync("../../proto/chat.proto", {
     keepCase: true,
     longs: String,
     enums: String,
@@ -29,7 +29,7 @@ let client = new proto.dsproject.Chat(
   grpc.credentials.createInsecure()
 );
  
-//Start the stream between server and client
+//Bi-directional streaming
 function startChat() {
   let channel = client.join({ user: username });
  
@@ -49,7 +49,7 @@ function onData(message) {
 }
  
 //Ask user name then start the chat
-rl.question("Enter name", answer => {
+rl.question("Enter name: ", answer => {
   username = answer;
  
   startChat();
