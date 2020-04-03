@@ -1,0 +1,27 @@
+{
+  "name": "dsproject",
+  "version": "1.0.0",
+  "description": "DS project 4th year",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bozappa/ds_project.git"
+  },
+  "keywords": [
+    "DS",
+    "gRPC"
+  ],
+  "author": "Dean Mulrooney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bozappa/ds_project/issues"
+  },
+  "homepage": "https://github.com/bozappa/ds_project#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.4",
+    "grpc": "^1.24.2"
+  }
+}
