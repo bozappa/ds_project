@@ -1,5 +1,5 @@
 {
-  "name": "node-grpc-server",
+  "name": "grpc_ds",
   "dependencies": {
     "@grpc/proto-loader": "^0.4.0",
     "google-protobuf": "^3.6.1",
